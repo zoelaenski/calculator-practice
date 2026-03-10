@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:lightslategray;
+}
+
+.calculator {
+    background-color: rebeccapurple; /*calculator background*/
+    padding: 20px; /*space inside the calculator/box padding*/
+    border-radius: 12px; /* rounded corners of the calculator/box border radius*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8); /*shadow effect*/
+}
+
+.display {
+   width: 100%; /*width of the display/box width*/
+   height: 50px; /*height of the display/box height*/
+   margin-bottom: 10px; /*space below the display/box margin*/
+   font-size: 25px; /*font size of the display/box font-size*/
+   text-align: right; /*align text to the right in the display/box text-align*/
+   padding: 10px; /*space inside the display/box padding*/
+   border: none; /*remove default border of the display/box border*/
+   border-radius: 5px; /* rounded corners of the display/box border radius*/
+   background-color: white; /*display background*/
+   box-sizing: border-box; /*include padding in the total width and height of the display/box box-sizing*/
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px); /*4 columns with equal width of 60px each*/
+    gap: 10px; /*space between buttons/box gap*/
+}
+
+button {
+    height: 60px; /*height of the buttons/box height*/
+    font-size: 20px; /*font size of the buttons/box font-size*/
+    border: none;
+    border-radius: 5px; /* rounded corners of the buttons/box border radius*/
+    cursor: pointer; /*change cursor to pointer on hover*/
+    background-color: white; /*button background*/
+    color: green; /*button text color*/
+}
+
+button:hover {
+    background-color:cornflowerblue;    /*change button background color on hover*/
+}
