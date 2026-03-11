@@ -28,12 +28,16 @@ body {
 
 .buttons {
     display: grid;
-    grid-template-columns: repeat(4, 60px); /*4 columns with equal width of 60px each*/
+    grid-template-columns: repeat(5, 60px); /*5 columns with equal width of 60px each*/
+    grid-auto-rows: 60px; /*automatic row height of 60px*/
     gap: 10px; /*space between buttons/box gap*/
 }
 
+
+
 button {
-    height: 60px; /*height of the buttons/box height*/
+    height: 100%; /*height of the buttons/box height*/
+    width: 100%; /*width of the buttons/box width*/
     font-size: 20px; /*font size of the buttons/box font-size*/
     border: none;
     border-radius: 5px; /* rounded corners of the buttons/box border radius*/
@@ -44,4 +48,9 @@ button {
 
 button:hover {
     background-color:cornflowerblue;    /*change button background color on hover*/
+}
+
+.plus {
+    grid-row: span 2; /*make the plus button span 2 rows in the grid*/
+    
 }
